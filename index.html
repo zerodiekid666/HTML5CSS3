@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Cheat Sheet</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+  <!-- Typography -->
+  <div class="container">
+    <h1 class="page-header">Hello Bootstrap! <small>welcome to us...</small></h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing
+      elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis
+      nostrud exercitation ullamco laboris nisi ut aliquip</p>
+
+    <p><mark>Lorem ipsum dolor sit amet</mark>, consectetur adipisicing
+      elit, sed do eiusmod tempor incididunt ut labore et
+      dolore <del>magna aliqua</del>. Ut enim ad minim veniam, quis
+      nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in repr
+      ehenderit in voluptate <u>velit</u> esse cillum dolore eu fugi
+      at nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim
+      id est laborum.</p>
+
+      <hr>
+
+      <!-- Alignment & Tranformation -->
+      <p class="text-left text-lowercase">Left align</p>
+      <p class="text-center text-uppercase">Center align</p>
+      <p class="text-right text-capitalize">Right align</p>
+      <p class="text-justify">Justified</p>
+      <p class="text-nowrap">No wrap text</p>
+
+      <!-- QUICK FLOATS -->
+      <div class="pull-right">Div float to right</div>
+      <div class="pull-left">Div float to left</div>
+      <!-- CLEAR FLOAT -->
+      <div class="clearfix"></div>
+
+      <hr>
+
+      <!-- Blockquote -->
+      <blockquote class="blockquote">
+        <p>Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia</p>
+        <footer>Quote by <cite title="NAD">NAD</cite></footer>
+      </blockquote>
+
+      <blockquote class="blockquote-reverse">
+        <p>Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia</p>
+        <footer>Quote by <cite title="NAD">NAD</cite></footer>
+      </blockquote>
+
+      <hr>
+
+      <!-- List -->
+      <ul class="list-unstyled">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item three</li>
+        <li>Item Four</li>
+      </ul>
+
+      <ul class="list-inline">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item three</li>
+        <li>Item Four</li>
+      </ul>
+
+      <hr>
+
+      <!-- Code -->
+      <code>&lt;h1&gt;Heading text&lt;/h1&gt;</code>
+      <br>
+      Change directory with <kbd>cd</kbd>
+      <br>
+      To edit settings, press <kbd><kbd>ctlr</kbd> + <kbd>,</kbd></kbd>
+
+      <hr>
+
+      <!-- Button -->
+      <button class="btn btn-default">Button</button>
+      <a href="" class="btn btn-default" role="button">Link</a>
+      <input type="submit" class="btn btn-default" value="Submit">
+
+      <button class="btn btn-default">Default</button>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-success">Success</button>
+      <button class="btn btn-info">Info</button>
+      <button class="btn btn-danger">danger</button>
+      <button class="btn btn-link">Link</button>
+
+      <button class="btn btn-default btn-lg">Default</button>
+      <button class="btn btn-default">Default</button>
+      <button class="btn btn-default btn-sm">Default</button>
+      <button class="btn btn-default btn-xs" disabled="disabled">Default</button>
+
+      <hr>
+
+      <!-- Form -->
+      <form>
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Add name">
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="Add email">
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <textarea type="email" class="form-control" placeholder="Add email"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <select class="form-control">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Upload File</label>
+          <input type="file">
+          <p class="help-block">Only png and jpg allowed</p>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+      </form>
+
+      <form class="form-inline">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label>
+            <button type="button" class="btn btn-default">Login</button>
+          </label>
+        </div>
+      </form>
+
+      <hr>
+
+      <!-- Table -->
+      <table class="table table-striped table-hover table-bordered table-condensed">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+
+        <tr class="danger">
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>66</td>
+        </tr>
+
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>26</td>
+        </tr>
+
+        <tr class="success">
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>26</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>26</td>
+        </tr>
+      </table>
+
+
+      <!-- List -->
+      <div class="container">
+        <ul class="list-group">
+          <li class="list-group-item">Item one</li>
+          <li class="list-group-item">Item two</li>
+          <li class="list-group-item">Item three</li>
+          <li class="list-group-item">Item four</li>
+        </ul>
+
+        <div class="list-group">
+          <a href="" class="list-group-item active">Link one</a>
+          <a href="" class="list-group-item">Link two</a>
+          <a href="" class="list-group-item list-group-item-success">Link three</a>
+          <a href="" class="list-group-item disabled">Link four</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Panel -->
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h3 class="panel-title">Panel Title</h3>
+          </div>
+          <div class="panel-body">
+            Panel content
+          </div>
+          <div class="panel-footer">Panel footer</div>
+        </div>
+
+        <hr>
+
+        <!-- Well -->
+        <div class="well">Hello bootstrap</div>
+        <div class="well well-lg">Hello bootstrap</div>
+        <div class="well well-sm">Hello bootstrap</div>
+
+
+        <hr>
+
+
+        <!-- Alert -->
+        <div class="alert alert-success" role="alert">A succes alert</div>
+        <div class="alert alert-info" role="alert">A info alert</div>
+        <div class="alert alert-warning" role="alert">A warning alert</div>
+        <div class="alert alert-danger" role="alert">A danger alert</div>
+
+        <div class="alert alert-warning alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" name="button"><span>&times;</span></button>
+          You can close this alert!
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:50%;">
+            50%
+          </div>
+        </div>
+
+        <!-- Label -->
+        <span class="label label-default">Default</span>
+        <h1>Hello <span class="label label-primary">Primary</span></h1>
+        <span class="label label-success">Success</span>
+        <span class="label label-danger">Lazy</span>
+        <span class="label label-info">Keep learning</span>
+        <span class="label label-warning">Nothing</span>
+        <a href="">Inbox <span class="badge">50</span></a>
+        <button class="btn btn-primary" type="button">
+          Messages <span class="badge">2</span>
+        </button>
+        <hr>
+
+        <!-- Images -->
+        <div class="container">
+          <img class="thumbnail" style="width:350px;height:142px;background-color:crimson;">
+          <img class="img-rounded" style="width:350px;height:142px;background-color:crimson;">
+          <img class="img-circle" style="width:350px;height:142px;background-color:crimson;">
+        </div>
+
+        <hr>
+
+        <!--  -->
+
+      </div>
+
+  </div>
+
+  <div style="height:400px;"></div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
